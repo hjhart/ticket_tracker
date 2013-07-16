@@ -4,7 +4,6 @@
         <% if @user.errors.any? %>
             <div id="error_explanation">
               <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
               <ul>
                 <% @user.errors.full_messages.each do |msg| %>
                     <li><%= msg %></li>
@@ -14,11 +13,16 @@
         <% end %>
 
         <div class="row">
-          <div class="large-12 columns">
+          <div class="large-8 columns">
             <%= f.text_field :plate_number, placeholder: "License Plate", class: "large-4" %>
+          </div>
+          <div class="large-4 columns">
+            <%= f.select :license_state, options_for_select(us_states) %>
+          </div>
+          <div class="large-12 columns">
             <%= f.text_field :email, placeholder: "Email", class: "large-4" %>
             <span>We promise we'll <em>never</em> share your information with anyone else. Ever.</span>
-            <%= f.button "Watch My Plates", class: "right large"  %>
+            <%= f.button "Watch My Plates", class: "right large" %>
 
           </div>
         </div>

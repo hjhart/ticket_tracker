@@ -14,6 +14,11 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require select2
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function(){
+  $(document).foundation();
+  $('#user_license_state').select2()
+});
+
