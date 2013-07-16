@@ -13,9 +13,19 @@
             </div>
         <% end %>
 
-        <%= f.text_field :plate_number, placeholder: "License Plate", class: "large-4" %>
-        <%= f.text_field :email, placeholder: "Email", class: "large-4" %>
-        <%= f.button "Watch My Plates"  %>
+        <div class="row">
+          <div class="large-12 columns">
+            <%= f.text_field :plate_number, placeholder: "License Plate", class: "large-4" %>
+            <%= f.text_field :email, placeholder: "Email", class: "large-4" %>
+            <span>We promise we'll <em>never</em> share your information with anyone else. Ever.</span>
+            <%= f.button "Watch My Plates", class: "right large"  %>
+
+          </div>
+        </div>
+        <div class="row" style="margin-top: 1em;">
+          <div class="large-12 columns">
+          </div>
+        </div>
     <% end %>
   </div>
 </div>
