@@ -15,3 +15,24 @@
  */
 
 
+@import 'foundation-icons';
+
+
+p {
+  font-size: 1.25em !important;
+}
+
+.icons {
+  .columns {
+    text-align: center;
+
+  }
+}
+
+#sign-up {
+  background-color: #E5F288;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
