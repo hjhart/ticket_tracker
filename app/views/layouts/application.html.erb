@@ -13,7 +13,7 @@
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  	<title><%= content_for?(:title) ? yield(:title) : "Ticket Tracker – Never miss a parking ticket again" %></title>
 
   	<%= stylesheet_link_tag "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
@@ -36,5 +36,17 @@
 
     
     <%= javascript_include_tag "application" %>
+    <footer>
+      <div class="row" style="margin-top: 30px;">
+        <div class="large-12 columns">
+          <p>You may also like:</p>
+          <ul>
+            <li style="display: inline; padding-right: 30px;"><a style="color:#00A0B0;" href="http://www.eggwichapp.com?utm_medium=web&utm_campaign=ticket_tracker&utm_source=ticket_tracker">EggWich</a> – The Breakfast Sandwich App in San Francisco</li>
+            <li style="display: inline;"><a style="color:#00A0B0;" href="http://www.hjhart.com/">hjhart.com</a> – James Hart's Portfolio</li>
+          </ul>
+
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
