@@ -59,7 +59,7 @@ TicketTracker::Application.configure do
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-  config.assets.precompile += %w( general_enclosed_foundicons.woff social_foundicons.woff general_foundicons.woff)
+  config.assets.precompile += %w( general_enclosed_foundicons.woff social_foundicons.woff general_foundicons.woff general_enclosed_foundicons.ttf social_foundicons.ttf general_foundicons.ttf general_enclosed_foundicons.svg social_foundicons.svg general_foundicons.svg )
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
